@@ -6,7 +6,7 @@ export default function UsersPage() {
     <div className="p-6 space-y-4">
       <h1 className="text-2xl font-bold">Users</h1>
       <UserDialog onSuccess={() => location.reload()} />
-      <UserList />
+      <UserList refreshKey={0} />
     </div>
   );
 }
